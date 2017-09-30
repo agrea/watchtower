@@ -2,7 +2,7 @@
 
 ## Development
 
-## Requirements
+### Requirements
 
 *Required*
 - [Go 1.9](https://golang.org)
