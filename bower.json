@@ -1,0 +1,28 @@
+{
+  "name": "watchtower",
+  "authors": [
+    "Sebastian Dahlgren <sebastian.dahlgren@gmail.com>"
+  ],
+  "description": "Status page application",
+  "main": "",
+  "keywords": [
+    "status",
+    "page",
+    "monitoring",
+    "availability",
+    "uptime"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.99.0"
+  }
+}

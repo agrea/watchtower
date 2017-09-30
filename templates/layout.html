@@ -1,0 +1,46 @@
+{{define "layout"}}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Watchtower</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+    href="/static/bower_components/materialize/dist/css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+
+  <body class="black-text">
+    <header>
+      <nav class="white">
+        <div class="nav-wrapper">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Log in</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        {{template "body"}}
+      </div>
+    </main>
+
+    <footer class="page-footer white">
+      <div class="footer-copyright red lighten-2 white-text">
+        <div class="container">
+          Status page provided by <a href="https://github.com/agrea/watchtower">Watchtower</a>
+          built with ♥ by <a href="https://agrea.io">Agrea</a>.
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery must come before materialize.js -->
+    <script src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/static/bower_components/materialize/dist/js/materialize.min.js"></script>
+  </body>
+</html>
+{{end}}
