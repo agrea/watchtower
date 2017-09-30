@@ -7,7 +7,7 @@ import (
 	"os"
 
 	"github.com/agrea/watchtower/config"
-	"github.com/agrea/watchtower/httpapi"
+	"github.com/agrea/watchtower/handlers"
 	"github.com/go-chi/chi"
 	"github.com/sirupsen/logrus"
 )
@@ -27,7 +27,7 @@ func main() {
 
 	// HTTP endpoints.
 	r.Mount("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(config.StaticPath))))
-	r.Get("/", http.HandlerFunc(httpapi.Index))
+	r.Get("/", http.HandlerFunc(handlers.Index))
 
 	// Start the web server.
 	err := http.ListenAndServe(fmt.Sprintf(":%s", os.Getenv("PORT")), r)
