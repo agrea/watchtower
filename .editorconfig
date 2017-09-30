@@ -1,0 +1,16 @@
+[*]
+  trim_trailing_whitespace = true
+  insert_final_newline = true
+  charset = utf-8
+  end_of_line = lf
+
+[*.html]
+  indent_size = 2
+  indent_style = space
+
+[*.css]
+  indent_size = 2
+  indent_style = space
+
+[Makefile]
+  indent_style = tab
