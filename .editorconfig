@@ -4,11 +4,15 @@
   charset = utf-8
   end_of_line = lf
 
+[*.css]
+  indent_size = 2
+  indent_style = space
+
 [*.html]
   indent_size = 2
   indent_style = space
 
-[*.css]
+[*.yml]
   indent_size = 2
   indent_style = space
 
