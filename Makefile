@@ -21,4 +21,4 @@ clean:
 .PHONY: watch
 watch: $(ENVIRONMENT)
 	$(info --- Starting Watchtower in watch mode)
-	gin run main.go
+	docker-compose run --rm -p 3000:3000 watchtower realize run .

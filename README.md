@@ -9,7 +9,7 @@
 - [dep](https://github.com/golang/dep)
 
 *Optional*
-- [gin](https://github.com/codegangsta/gin) for auto reloading of the application
+- [realize](https://github.com/tockins/realize) for auto reloading of the application
 - [Bower](https://bower.io) if you need to update JS / CSS libraries
 - [EditorConfig](http://editorconfig.org/) to automatically align to the project code standard
 
